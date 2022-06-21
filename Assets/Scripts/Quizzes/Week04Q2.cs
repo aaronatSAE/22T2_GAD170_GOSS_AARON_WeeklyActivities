@@ -19,6 +19,8 @@ namespace AaronGoss
             if(numberToCheck > 0)
             {
                 numberToCheck -= 1;
+                Debug.Log("numberToCheck = " + numberToCheck);
+                Debug.Log("snickersLeft = " + snickersLeft);
             }
             else
             {

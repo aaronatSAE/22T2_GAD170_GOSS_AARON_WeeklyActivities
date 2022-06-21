@@ -18,6 +18,8 @@ namespace AaronGoss
         {
             if(numberToCheck > 0)
             {
+                Debug.Log("numberToCheck = " + numberToCheck + " before returning -1.");
+                Debug.Log("snickersLeft = " + snickersLeft);
                 return -1;
             }
             else
