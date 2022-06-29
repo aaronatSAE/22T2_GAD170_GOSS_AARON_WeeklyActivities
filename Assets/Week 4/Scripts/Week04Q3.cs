@@ -4,25 +4,28 @@ using UnityEngine;
 
 namespace AaronGoss
 {
-    public class Week04Q2 : MonoBehaviour
+    public class Week04Q3 : MonoBehaviour
     {
         [SerializeField] private int snickersLeft = 1;
 
         private void Start()
         {
-            Surprise(snickersLeft);
-            Surprise(snickersLeft);
+            snickersLeft += Surprise(snickersLeft);
+            snickersLeft += Surprise(snickersLeft);
         }
 
-        public void Surprise(int numberToCheck)
+        public int Surprise(int numberToCheck)
         {
             if(numberToCheck > 0)
             {
-                numberToCheck -= 1;
+                Debug.Log("numberToCheck = " + numberToCheck + " before returning -1.");
+                Debug.Log("snickersLeft = " + snickersLeft);
+                return -1;
             }
             else
             {
                 Debug.Log("Aaron is now sad.");
+                return 0;
             }
         }
     }
