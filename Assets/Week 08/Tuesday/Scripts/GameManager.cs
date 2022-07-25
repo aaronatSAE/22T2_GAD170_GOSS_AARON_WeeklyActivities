@@ -6,8 +6,8 @@ namespace AaronGoss
 {
     public class GameManager : MonoBehaviour
     {
-        [SerializeField] private Character playerOne;
-        [SerializeField] private Character playerTwo;
+        [SerializeField] private CharacterWithMorale playerOne;
+        [SerializeField] private CharacterWithMorale playerTwo;
 
         //[SerializeField] private Character[] players;
 

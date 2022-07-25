@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace AaronGoss
 {
-    public class Character : MonoBehaviour
+    public class CharacterWithMana : MonoBehaviour
     {
         public int maxHealth = 100;
         public int currentHealth;

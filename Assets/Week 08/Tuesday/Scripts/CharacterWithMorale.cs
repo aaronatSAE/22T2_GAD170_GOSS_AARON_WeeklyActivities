@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace AaronGoss
 {
-    public class Character : MonoBehaviour
+    public class CharacterWithMorale : MonoBehaviour
     {
         public int health = 100;
         public int morale = 100;
